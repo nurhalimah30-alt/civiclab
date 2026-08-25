@@ -2,7 +2,7 @@
 // Ganti tiga URL di bawah setelah Ibu memiliki link final.
 const CIVICLAB_CONFIG = {
   bookingForm: "PASTE_LINK_GOOGLE_FORM_PENGAJUAN_DI_SINI",
-  evaluationForm: "PASTE_LINK_GOOGLE_FORM_EVALUASI_DI_SINI",
+  feedbackForm: "PASTE_LINK_GOOGLE_FORM_MASUKAN_SARAN_DI_SINI",
   teachingMaterial: "", // isi dengan link PDF/e-book ketika bahan ajar sudah final
   sopDocument: ""       // isi dengan link SOP ketika dokumen final tersedia
 };
@@ -16,7 +16,7 @@ function setLink(id, url) {
 }
 
 setLink("bookingLink", CIVICLAB_CONFIG.bookingForm);
-setLink("evaluationLink", CIVICLAB_CONFIG.evaluationForm);
+setLink("feedbackLink", CIVICLAB_CONFIG.feedbackForm);
 setLink("bookLink", CIVICLAB_CONFIG.teachingMaterial);
 setLink("sopLink", CIVICLAB_CONFIG.sopDocument);
 

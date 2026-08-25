@@ -1,6 +1,6 @@
 # CIVICLAB — Custom Website
 
-Website custom CivicLab untuk digitalisasi layanan Laboratorium PPKn.
+Website custom CivicLab untuk digitalisasi layanan Laboratorium PKn.
 
 ## File
 - `index.html` — halaman utama
@@ -15,7 +15,6 @@ Website custom CivicLab untuk digitalisasi layanan Laboratorium PPKn.
 - Bahan Ajar & Media Pembelajaran
 - SOP LAB
 - E-Katalog (siap diisi setelah data fasilitas tersedia)
-- Evaluasi CivicLab
 - Kontak
 - Tampilan desktop dan HP
 
@@ -30,3 +29,6 @@ Buka `script.js`, lalu ganti:
 Website ini berupa file HTML/CSS/JS biasa sehingga dapat dipublikasikan di layanan static hosting seperti GitHub Pages atau Cloudflare Pages tanpa membeli hosting berbayar.
 
 Untuk domain sendiri seperti `civiclab.id`, domain dapat dibeli kemudian jika diperlukan.
+
+## Catatan Monitoring dan Evaluasi
+Monitoring dan evaluasi merupakan kegiatan aktualisasi, bukan menu utama website. Angket dapat dibagikan kepada mahasiswa melalui tautan atau QR Code secara terpisah.
