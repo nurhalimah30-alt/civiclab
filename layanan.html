@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layanan Laboratorium PKn | CIVICLAB</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#071d3d;
+  color:#fff;
+}
+.topbar{
+  height:72px;
+  background:#03142f;
+  display:flex;
+  align-items:center;
+  padding:0 4%;
+  gap:30px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:#fff;
+  margin-right:auto;
+}
+.mark{
+  width:44px;
+  height:44px;
+  border-radius:10px;
+  background:#49c83b;
+  display:grid;
+  place-items:center;
+  font-size:25px;
+  font-weight:800;
+}
+.brand strong{font-size:24px}
+.brand strong span{color:#49c83b}
+.brand small{
+  display:block;
+  font-size:12px;
+}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin:0 10px;
+  font-size:14px;
+}
+nav a:hover{color:#55d33f}
+.cta{
+  border:1px solid #55d33f;
+  color:#55d33f;
+  padding:12px 17px;
+  border-radius:9px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+}
+
+main{
+  max-width:1180px;
+  margin:auto;
+  padding:65px 28px 80px;
+}
+.kicker{
+  color:#55d33f;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:2px;
+  margin-bottom:12px;
+}
+h1{
+  font-size:42px;
+  margin:0 0 14px;
+}
+.intro{
+  max-width:800px;
+  color:#c8d5e7;
+  line-height:1.7;
+  margin-bottom:38px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+.card{
+  background:#0b2a54;
+  border:1px solid #28517c;
+  border-radius:16px;
+  padding:28px;
+  min-height:235px;
+}
+.card:nth-child(1){border-top:4px solid #35c84a}
+.card:nth-child(2){border-top:4px solid #8a5ce0}
+.card:nth-child(3){border-top:4px solid #22a9df}
+.card:nth-child(4){border-top:4px solid #ef8a18}
+
+.icon{
+  width:52px;
+  height:52px;
+  border-radius:12px;
+  background:#123d6d;
+  display:grid;
+  place-items:center;
+  font-size:24px;
+  margin-bottom:16px;
+}
+.card h2{
+  font-size:21px;
+  margin:0 0 10px;
+}
+.card p{
+  color:#c8d5e7;
+  line-height:1.6;
+  font-size:14px;
+  margin:0;
+}
+
+.action{
+  margin-top:28px;
+  background:#0c315d;
+  border:1px solid #37648f;
+  border-radius:14px;
+  padding:24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+.action strong{font-size:19px}
+.action p{
+  margin:6px 0 0;
+  color:#c8d5e7;
+  font-size:14px;
+}
+.action a{
+  background:#4bc83d;
+  color:#fff;
+  text-decoration:none;
+  padding:14px 22px;
+  border-radius:8px;
+  font-weight:800;
+  white-space:nowrap;
+}
+.back{
+  display:inline-block;
+  margin-top:28px;
+  color:#55d33f;
+  text-decoration:none;
+  font-weight:700;
+}
+
+@media(max-width:850px){
+  .topbar{padding:0 18px}
+  .topbar nav{display:none}
+  .grid{grid-template-columns:1fr}
+  main{padding:45px 18px}
+  h1{font-size:32px}
+  .action{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a class="brand" href="index.html">
+  <div class="mark">C</div>
+  <div>
+    <strong>CIVIC<span>LAB</span></strong>
+    <small>Laboratorium PKn</small>
+  </div>
+</a>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="index.html#profil">Profil</a>
+  <a href="layanan.html">Layanan</a>
+  <a href="index.html#bahan-ajar">Bahan Ajar</a>
+  <a href="index.html#sop">SOP</a>
+  <a href="index.html#ekatalog">E-Katalog</a>
+  <a href="index.html#masukan">Masukan &amp; Saran</a>
+  <a href="index.html#kontak">Kontak</a>
+</nav>
+
+<a class="cta" href="#ajukan">
+  Ajukan Penggunaan Lab →
+</a>
+
+</header>
+
+<main>
+
+<div class="kicker">LAYANAN LABORATORIUM</div>
+
+<h1>Layanan Laboratorium PKn</h1>
+
+<p class="intro">
+CivicLab menyediakan layanan untuk mendukung kegiatan pembelajaran,
+pemanfaatan fasilitas, dan kegiatan akademik di Laboratorium PKn.
+</p>
+
+<section class="grid">
+
+<article class="card">
+  <div class="icon">☑</div>
+  <h2>Pengajuan Penggunaan Laboratorium</h2>
+  <p>
+  Ajukan penggunaan Laboratorium PKn untuk kegiatan pembelajaran,
+  praktikum, diskusi, workshop, maupun kegiatan akademik lainnya.
+  </p>
+</article>
+
+<article class="card">
+  <div class="icon">▣</div>
+  <h2>Peminjaman Fasilitas Laboratorium</h2>
+  <p>
+  Informasi dan pengajuan pemanfaatan fasilitas serta perangkat
+  yang tersedia di Laboratorium PKn untuk mendukung kegiatan akademik.
+  </p>
+</article>
+
+<article class="card">
+  <div class="icon">▤</div>
+  <h2>Layanan Pembelajaran</h2>
+  <p>
+  Pemanfaatan laboratorium untuk mendukung pembelajaran PKn
+  yang inovatif, kolaboratif, dan berbasis teknologi.
+  </p>
+</article>
+
+<article class="card">
+  <div class="icon">▦</div>
+  <h2>Informasi Jadwal Laboratorium</h2>
+  <p>
+  Informasi jadwal penggunaan Laboratorium PKn untuk membantu
+  perencanaan dan pemanfaatan laboratorium secara efektif.
+  </p>
+</article>
+
+</section>
+
+<div class="action" id="ajukan">
+
+<div>
+  <strong>Siap Menggunakan Laboratorium PKn?</strong>
+  <p>
+  Ajukan penggunaan laboratorium untuk mendukung kegiatan
+  pembelajaran dan akademik.
+  </p>
+</div>
+
+<a href="#ajukan">
+  AJUKAN PENGGUNAAN LAB →
+</a>
+
+</div>
+
+<a class="back" href="index.html">
+← Kembali ke Beranda
+</a>
+
+</main>
+
+</body>
+</html>
