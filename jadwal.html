@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Informasi Jadwal Laboratorium | CIVICLAB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .detail-page {
+            min-height: 100vh;
+            padding: 70px 7%;
+            background: #061d3d;
+            color: white;
+        }
+
+        .detail-wrap {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .detail-page h1 {
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .intro {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #d9e8ff;
+            margin-bottom: 40px;
+        }
+
+        .detail-card {
+            background: #123966;
+            border: 1px solid #2d5d91;
+            border-radius: 18px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .detail-card h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            padding: 15px;
+            border-bottom: 1px solid #37628f;
+            text-align: left;
+        }
+
+        .schedule-table th {
+            background: #0d2d55;
+        }
+
+        .status {
+            font-weight: bold;
+        }
+
+        .scheduled {
+            color: #ffd34d;
+        }
+
+        .available {
+            color: #4dcc27;
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="detail-page">
+
+    <div class="detail-wrap">
+
+        <h1>Informasi Jadwal Laboratorium</h1>
+
+        <p class="intro">
+            Informasi jadwal penggunaan Laboratorium PKn CIVICLAB.
+        </p>
+
+        <section class="detail-card">
+
+            <h2>📅 Jadwal Laboratorium</h2>
+
+            <table class="schedule-table">
+
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Waktu</th>
+                        <th>Kegiatan</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Senin</td>
+                        <td>08.00–10.00</td>
+                        <td>Pembelajaran</td>
+                        <td class="status scheduled">Terjadwal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Selasa</td>
+                        <td>10.00–12.00</td>
+                        <td>Praktikum</td>
+                        <td class="status scheduled">Terjadwal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rabu</td>
+                        <td>08.00–12.00</td>
+                        <td>-</td>
+                        <td class="status available">Tersedia</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kamis</td>
+                        <td>13.00–15.00</td>
+                        <td>Diskusi</td>
+                        <td class="status scheduled">Terjadwal</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section class="detail-card">
+
+            <h2>📌 Keterangan</h2>
+
+            <p>
+                Jadwal dapat berubah sesuai kebutuhan kegiatan akademik
+                dan penggunaan Laboratorium PKn.
+            </p>
+
+        </section>
+
+    </div>
+
+</main>
+
+</body>
+</html>
