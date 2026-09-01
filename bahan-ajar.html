@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Bahan Ajar Digital | CIVICLAB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .bahan-page {
+            min-height: 100vh;
+            padding: 70px 7%;
+            background: #061d3d;
+            color: white;
+        }
+
+        .bahan-wrap {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .bahan-page h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .bahan-intro {
+            color: #d9e8ff;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .mata-kuliah {
+            background: #123966;
+            border: 1px solid #2d5d91;
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 25px;
+        }
+
+        .mata-kuliah h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .mata-kuliah p {
+            color: #d9e8ff;
+            line-height: 1.7;
+        }
+
+        .dokumen {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .dokumen a {
+            display: inline-block;
+            padding: 11px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .rps-button {
+            background: #42d62f;
+            color: white;
+        }
+
+        .buku-button {
+            background: #0b8fd9;
+            color: white;
+        }
+
+        .buku-button.disabled {
+            background: #53657d;
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="bahan-page">
+
+    <div class="bahan-wrap">
+
+        <h1>📚 Bahan Ajar Digital</h1>
+
+        <p class="bahan-intro">
+            Pusat bahan ajar digital CIVICLAB untuk mendukung pembelajaran
+            Pendidikan Kewarganegaraan. RPS tersedia untuk diakses,
+            sedangkan buku ajar digital akan tersedia setelah proses
+            penyusunan selesai.
+        </p>
+
+        <!-- MATA KULIAH 1 -->
+        <section class="mata-kuliah">
+
+            <h2>📘 Pengembangan Pembelajaran PPKn SD</h2>
+
+            <p>
+                Rencana Pembelajaran Semester (RPS) dan bahan ajar digital
+                untuk mata kuliah Pengembangan Pembelajaran PPKn SD.
+            </p>
+
+            <div class="dokumen">
+
+                <a href="#" class="rps-button">
+                    📄 Lihat RPS
+                </a>
+
+                <a href="#" class="buku-button disabled">
+                    📖 Buku Ajar — Segera Hadir
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- MATA KULIAH 2 -->
+        <section class="mata-kuliah">
+
+            <h2>📗 Konsep Dasar PPKn SD</h2>
+
+            <p>
+                Rencana Pembelajaran Semester (RPS) dan bahan ajar digital
+                untuk mata kuliah Konsep Dasar PPKn SD.
+            </p>
+
+            <div class="dokumen">
+
+                <a href="#" class="rps-button">
+                    📄 RPS — Segera Hadir
+                </a>
+
+                <a href="#" class="buku-button disabled">
+                    📖 Buku Ajar — Segera Hadir
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+</body>
+</html>
