@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil CIVICLAB | Laboratorium PKn</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f2747, #164e63);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 45px 20px;
+    }
+
+    .back-button {
+      display: inline-block;
+      text-decoration: none;
+      color: #0f2747;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .back-button:hover {
+      color: #0f766e;
+    }
+
+    .intro {
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 25px rgba(15, 39, 71, 0.08);
+    }
+
+    .intro h2 {
+      color: #0f2747;
+      margin-bottom: 15px;
+      font-size: 27px;
+    }
+
+    .intro p {
+      color: #475569;
+      font-size: 16px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(15, 39, 71, 0.08);
+      border-top: 4px solid #0f766e;
+    }
+
+    .card h3 {
+      color: #0f2747;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .commitment {
+      margin-top: 30px;
+      background: linear-gradient(135deg, #0f2747, #164e63);
+      color: white;
+      padding: 35px;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    .commitment h2 {
+      margin-bottom: 12px;
+    }
+
+    .values {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .value {
+      background: rgba(255,255,255,0.12);
+      padding: 9px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0b1d33;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .intro,
+      .card,
+      .commitment {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <h1>PROFIL CIVICLAB</h1>
+    <p>Laboratorium Pendidikan Kewarganegaraan</p>
+  </section>
+
+  <main class="container">
+
+    <a href="index.html" class="back-button">← Kembali ke CivicLab</a>
+
+    <section class="intro">
+      <h2>Tentang CIVICLAB</h2>
+      <p>
+        CIVICLAB merupakan Laboratorium Pendidikan Kewarganegaraan (PKn)
+        yang mendukung kegiatan pembelajaran, pengembangan media pembelajaran,
+        serta penyediaan sumber belajar bagi mahasiswa dan dosen Program Studi PGSD.
+      </p>
+    </section>
+
+    <section class="cards">
+
+      <div class="card">
+        <h3>🎯 Tujuan</h3>
+        <p>
+          Mendukung terciptanya kegiatan pembelajaran Pendidikan Kewarganegaraan
+          yang inovatif, kontekstual, dan relevan dengan perkembangan teknologi
+          serta kebutuhan pembelajaran di perguruan tinggi.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🏛️ Fungsi Laboratorium</h3>
+        <p>
+          CIVICLAB berfungsi sebagai ruang pendukung pembelajaran,
+          pengembangan media pembelajaran, kegiatan akademik, penelitian,
+          serta penyediaan berbagai sumber belajar Pendidikan Kewarganegaraan.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💻 Layanan Digital</h3>
+        <p>
+          CIVICLAB menyediakan akses informasi laboratorium secara digital,
+          meliputi layanan penggunaan laboratorium, bahan ajar, RPS,
+          SOP, serta katalog media pembelajaran.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📚 Ruang Lingkup Kegiatan</h3>
+        <p>
+          Kegiatan CIVICLAB mencakup pembelajaran, pengembangan media,
+          pemanfaatan sumber belajar, kegiatan akademik, penelitian,
+          dan berbagai aktivitas yang mendukung Pendidikan Kewarganegaraan.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="commitment">
+      <h2>Komitmen CIVICLAB</h2>
+      <p>
+        Mendorong pengembangan pembelajaran PKn yang inovatif, kolaboratif,
+        edukatif, dan adaptif terhadap perkembangan teknologi digital.
+      </p>
+
+      <div class="values">
+        <span class="value">Inovatif</span>
+        <span class="value">Kolaboratif</span>
+        <span class="value">Edukatif</span>
+        <span class="value">Adaptif</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 CIVICLAB – Laboratorium Pendidikan Kewarganegaraan
+  </footer>
+
+</body>
+</html>
