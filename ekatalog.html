@@ -143,6 +143,72 @@
     </div>
 
 </main>
+<style>
+  .media-image img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
 
+  .media-image img:hover {
+    transform: scale(1.03);
+  }
+
+  .image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 42px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+</style>
+
+<div id="imageModal" class="image-modal">
+  <span class="close-modal">&times;</span>
+  <img id="modalImage" src="" alt="Foto Media">
+</div>
+
+<script>
+  const mediaImages = document.querySelectorAll('.media-image img');
+  const imageModal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  const closeModal = document.querySelector('.close-modal');
+
+  mediaImages.forEach(function(image) {
+    image.addEventListener('click', function() {
+      imageModal.style.display = 'flex';
+      modalImage.src = this.src;
+    });
+  });
+
+  closeModal.addEventListener('click', function() {
+    imageModal.style.display = 'none';
+  });
+
+  imageModal.addEventListener('click', function(event) {
+    if (event.target === imageModal) {
+      imageModal.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
