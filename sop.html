@@ -1,274 +1,192 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOP | CIVICLAB</title>
 
-    <title>SOP Laboratorium PKn | CIVICLAB</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <link rel="stylesheet" href="style.css">
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #06244d;
+      color: #ffffff;
+      min-height: 100vh;
+    }
 
-    <style>
-        .sop-page {
-            min-height: 100vh;
-            padding: 70px 7%;
-            background: #061d3d;
-            color: white;
-        }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 0 60px;
+    }
 
-        .sop-wrap {
-            max-width: 1100px;
-            margin: auto;
-        }
+    .back {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-        .sop-page h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+    .back:hover {
+      text-decoration: underline;
+    }
 
-        .sop-intro {
-            color: #d9e8ff;
-            line-height: 1.8;
-            margin-bottom: 40px;
-        }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-        .sop-card {
-            background: #123966;
-            border: 1px solid #2d5d91;
-            border-radius: 18px;
-            padding: 28px;
-            margin-bottom: 22px;
-        }
+    .header h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
 
-        .sop-card h2 {
-            margin-top: 0;
-            font-size: 23px;
-        }
+    .header p {
+      font-size: 17px;
+      opacity: 0.9;
+    }
 
-        .sop-card p,
-        .sop-card li {
-            color: #d9e8ff;
-            line-height: 1.7;
-        }
+    .sop-list {
+      display: grid;
+      gap: 25px;
+    }
 
-        .sop-card ol,
-        .sop-card ul {
-            padding-left: 25px;
-        }
+    .sop-card {
+      background: #173f70;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
 
-        .alur {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin-top: 20px;
-        }
+    .sop-card h2 {
+      font-size: 22px;
+      margin-bottom: 22px;
+      line-height: 1.4;
+    }
 
-        .alur-item {
-            background: #0b2b52;
-            border-radius: 12px;
-            padding: 18px;
-            text-align: center;
-        }
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
-        .alur-item strong {
-            display: block;
-            margin-bottom: 8px;
-        }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #ffffff;
+      transition: 0.2s;
+    }
 
-        @media (max-width: 700px) {
-            .alur {
-                grid-template-columns: 1fr;
-            }
+    .btn-view {
+      background: #2878d4;
+    }
 
-            .sop-page h1 {
-                font-size: 32px;
-            }
-        }.back-button {
-    display: inline-block;
-    margin-bottom: 25px;
-    padding: 10px 18px;
-    border: 1px solid #42d62f;
-    border-radius: 8px;
-    color: #42d62f;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .btn-download {
+      background: #35c933;
+    }
 
-.back-button:hover {
-    background: #42d62f;
-    color: white;
-}
-    </style>
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: 92%;
+        padding-top: 30px;
+      }
+
+      .header h1 {
+        font-size: 28px;
+      }
+
+      .sop-card h2 {
+        font-size: 19px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<main class="sop-page">
-    <a href="index.html" class="back-button">
-    ← Kembali ke CivicLab
-</a>
+  <div class="container">
 
-    <div class="sop-wrap">
+    <a href="index.html" class="back">← Kembali ke Beranda</a>
 
-        <h1>📋 SOP Laboratorium PKn CIVICLAB</h1>
-
-        <p class="sop-intro">
-            Standar Operasional Prosedur penggunaan Laboratorium PKn CIVICLAB
-            sebagai pedoman bagi mahasiswa, dosen, dan sivitas akademika
-            dalam melaksanakan kegiatan akademik secara tertib, aman,
-            efektif, dan bertanggung jawab.
-        </p>
-
-        <section class="sop-card">
-            <h2>🎯 1. Tujuan</h2>
-            <p>
-                SOP ini disusun sebagai pedoman dalam menggunakan Laboratorium
-                PKn CIVICLAB untuk mendukung kegiatan pembelajaran, praktikum,
-                diskusi, penelitian, workshop, dan kegiatan akademik lainnya.
-            </p>
-        </section>
-
-        <section class="sop-card">
-            <h2>👥 2. Ruang Lingkup</h2>
-            <ul>
-                <li>Mahasiswa</li>
-                <li>Dosen</li>
-                <li>Tenaga kependidikan</li>
-                <li>Sivitas akademika lainnya yang memperoleh izin.</li>
-            </ul>
-        </section>
-
-        <section class="sop-card">
-            <h2>📚 3. Jenis Kegiatan</h2>
-            <ul>
-                <li>Kegiatan pembelajaran dan praktikum</li>
-                <li>Diskusi dan presentasi akademik</li>
-                <li>Workshop dan pelatihan</li>
-                <li>Kegiatan penelitian</li>
-                <li>Kegiatan akademik lainnya yang relevan dengan Pendidikan Kewarganegaraan</li>
-            </ul>
-        </section>
-
-        <section class="sop-card">
-            <h2>📌 4. Ketentuan Penggunaan</h2>
-            <ol>
-                <li>Menggunakan laboratorium sesuai tujuan kegiatan yang diajukan.</li>
-                <li>Mengajukan penggunaan laboratorium melalui formulir pengajuan.</li>
-                <li>Menggunakan laboratorium sesuai jadwal yang telah disetujui.</li>
-                <li>Menjaga kebersihan, ketertiban, keamanan, dan kenyamanan.</li>
-                <li>Menggunakan fasilitas sesuai fungsi dan peruntukannya.</li>
-                <li>Tidak memindahkan fasilitas tanpa izin pengelola.</li>
-                <li>Menjaga fasilitas laboratorium dari kerusakan.</li>
-                <li>Melaporkan kerusakan atau kendala kepada pengelola.</li>
-                <li>Mengembalikan kondisi ruangan dan fasilitas seperti semula.</li>
-                <li>Mematuhi arahan dan ketentuan pengelola laboratorium.</li>
-            </ol>
-        </section>
-
-        <section class="sop-card">
-            <h2>🔄 5. Alur Penggunaan Laboratorium</h2>
-
-            <div class="alur">
-
-                <div class="alur-item">
-                    <strong>1. Pengajuan</strong>
-                    Mengisi formulir penggunaan laboratorium.
-                </div>
-
-                <div class="alur-item">
-                    <strong>2. Verifikasi</strong>
-                    Pengelola memeriksa pengajuan.
-                </div>
-
-                <div class="alur-item">
-                    <strong>3. Konfirmasi</strong>
-                    Pengguna menerima konfirmasi.
-                </div>
-
-                <div class="alur-item">
-                    <strong>4. Pelaksanaan</strong>
-                    Menggunakan laboratorium sesuai jadwal.
-                </div>
-
-                <div class="alur-item">
-                    <strong>5. Pemeriksaan</strong>
-                    Memastikan ruangan dan fasilitas dalam kondisi baik.
-                </div>
-
-                <div class="alur-item">
-                    <strong>6. Penyelesaian</strong>
-                    Merapikan ruangan dan melaporkan kendala.
-                </div>
-
-            </div>
-        </section>
-
-        <section class="sop-card">
-            <h2>⚠️ 6. Tanggung Jawab Pengguna</h2>
-            <ul>
-                <li>Menjaga ketertiban selama kegiatan.</li>
-                <li>Menjaga kebersihan ruangan.</li>
-                <li>Menjaga keamanan fasilitas.</li>
-                <li>Menggunakan peralatan sesuai ketentuan.</li>
-                <li>Melaporkan kerusakan akibat penggunaan.</li>
-                <li>Mengembalikan fasilitas setelah kegiatan selesai.</li>
-            </ul>
-        </section>
-
-        <section class="sop-card">
-            <h2>🚫 7. Larangan</h2>
-            <ul>
-                <li>Menggunakan laboratorium tanpa izin.</li>
-                <li>Menggunakan fasilitas di luar tujuan yang disetujui.</li>
-                <li>Merusak atau menyalahgunakan fasilitas.</li>
-                <li>Membawa fasilitas keluar tanpa izin.</li>
-                <li>Mengganggu kegiatan akademik lainnya.</li>
-                <li>Meninggalkan ruangan dalam keadaan kotor atau tidak tertata.</li>
-            </ul>
-        </section>
-
-        <section class="sop-card">
-            <h2>⚖️ 8. Sanksi</h2>
-            <p>
-                Pelanggaran terhadap ketentuan penggunaan laboratorium dapat
-                dikenakan tindakan sesuai tingkat pelanggaran, antara lain
-                teguran, pembatasan penggunaan laboratorium, kewajiban
-                mengganti atau memperbaiki kerusakan akibat kelalaian,
-                serta tindakan administratif lainnya sesuai ketentuan institusi.
-            </p>
-        </section>
-
-        <section class="sop-card">
-            <h2>✅ 9. Penutup</h2>
-            <p>
-                SOP ini menjadi pedoman penggunaan Laboratorium PKn CIVICLAB
-                agar seluruh kegiatan dapat berlangsung secara tertib,
-                efektif, aman, dan mendukung kegiatan akademik.
-            </p>
-        </section>
-<div class="dokumen">
-
-    <a href="SOP_Penggunaan_Laboratorium_PKn_CIVICLAB.pdf"
-       class="rps-button"
-       target="_blank">
-        👁️ Lihat SOP Lengkap
-    </a>
-
-    <a href="SOP_Penggunaan_Laboratorium_PKn_CIVICLAB.pdf"
-       class="buku-button"
-       download>
-        ⬇️ Download SOP
-</a>
-</div>
-</div>
-</main>
-</body>
-</html>
-
-</div>
+    <div class="header">
+      <h1>📄 SOP CIVICLAB</h1>
+      <p>Standar Operasional Prosedur Laboratorium PKn</p>
     </div>
 
-</main>
+    <div class="sop-list">
+
+      <div class="sop-card">
+        <h2>1. SOP Layanan Penggunaan dan Peminjaman Laboratorium PKn</h2>
+
+        <div class="buttons">
+          <a
+            href="SOP%20Pengajuan%20Penggunaan%20Laboratorium%20PKn%20CIVICLAB.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-view">
+            👁 Lihat SOP
+          </a>
+
+          <a
+            href="SOP%20Pengajuan%20Penggunaan%20Laboratorium%20PKn%20CIVICLAB.pdf"
+            download
+            class="btn btn-download">
+            ⬇ Download SOP
+          </a>
+        </div>
+      </div>
+
+
+      <div class="sop-card">
+        <h2>2. SOP Pengembalian Media/Alat Laboratorium PKn</h2>
+
+        <div class="buttons">
+          <a
+            href="SOP_Pengembalian_Media_Alat_Laboratorium_PKn_CIVICLAB_A4.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-view">
+            👁 Lihat SOP
+          </a>
+
+          <a
+            href="SOP_Pengembalian_Media_Alat_Laboratorium_PKn_CIVICLAB_A4.pdf"
+            download
+            class="btn btn-download">
+            ⬇ Download SOP
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
